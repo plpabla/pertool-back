@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import { Model } from './calculator/Model.js'
+import { Model } from './calculator/index.js'
 
 const app = express()
 const port = process.env.PORT ?? 3000
@@ -17,11 +17,12 @@ app.get('/test', (req:any,res:any)=> {
 
 app.post('/api/calculate', (req:any, res:any) => {
   const data = req.body
+  let model:Model|null = null
+
   try {
-    const model = new Model(data)
+    model = new Model(data)
     model.calculate()
     console.log(model)
-    throw 423
   } catch (e) {
     res.statusCode = 400
     res.type('application/json')
@@ -29,6 +30,8 @@ app.post('/api/calculate', (req:any, res:any) => {
     return
   }
 
+  res.type('application/json')
+  res.send(model.getObj())
 })
 
 app.use((req:any, res:any) => {

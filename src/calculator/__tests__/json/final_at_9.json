@@ -1,0 +1,152 @@
+{
+  "state": {
+    "Link._id": 4,
+    "Milestone._id": 4
+  },
+  "milestones": [
+    {
+      "position": [
+        200,
+        300
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 0,
+      "name": "0",
+      "description": "",
+      "sourceLinks": [
+        0,
+        2
+      ],
+      "destinationLinks": [],
+      "timing": {
+        "tmin": 0,
+        "tmax": 0,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        378.6644951140065,
+        257.98526380433333
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 1,
+      "name": "1",
+      "description": "a",
+      "sourceLinks": [
+        1
+      ],
+      "destinationLinks": [
+        0
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        372.9641693811075,
+        410.337362748884
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 2,
+      "name": "2",
+      "description": "b",
+      "sourceLinks": [
+        3
+      ],
+      "destinationLinks": [
+        2
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        609.9348534201955,
+        345.1599942164559
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 3,
+      "name": "3",
+      "description": "finito",
+      "sourceLinks": [],
+      "destinationLinks": [
+        1,
+        3
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": 0,
+      "sourceId": 0,
+      "destId": 1,
+      "points": [
+        226.28304945129562,
+        293.8192790436107,
+        352.3814456627109,
+        264.1659847607226
+      ],
+      "taskLength": 2
+    },
+    {
+      "id": 1,
+      "sourceId": 1,
+      "destId": 3,
+      "points": [
+        403.9292438134989,
+        267.50852339081416,
+        584.6701047207032,
+        335.6367346299751
+      ],
+      "taskLength": 3
+    },
+    {
+      "id": 2,
+      "sourceId": 0,
+      "destId": 2,
+      "points": [
+        222.76279620782725,
+        314.5208508290983,
+        350.2013731732803,
+        395.8165119197857
+      ],
+      "taskLength": 4
+    },
+    {
+      "id": 3,
+      "sourceId": 2,
+      "destId": 3,
+      "points": [
+        398.9974220055826,
+        403.17707240628897,
+        583.9016007957204,
+        352.32028455905095
+      ],
+      "taskLength": 5
+    }
+  ]
+}

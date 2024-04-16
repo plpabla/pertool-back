@@ -1,0 +1,102 @@
+{
+  "state": {
+    "Link._id": 2,
+    "Milestone._id": 4
+  },
+  "milestones": [
+    {
+      "position": [
+        200,
+        300
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 0,
+      "name": "0",
+      "description": "r00t",
+      "sourceLinks": [
+        0
+      ],
+      "destinationLinks": [],
+      "timing": {
+        "tmin": 0,
+        "tmax": 0,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        253.25732899022802,
+        433.14944173523384
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 2,
+      "name": "1",
+      "description": "second source",
+      "sourceLinks": [
+        1
+      ],
+      "destinationLinks": [],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        464.9837133550489,
+        304.4241388836884
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 3,
+      "name": "2",
+      "description": "finale",
+      "sourceLinks": [],
+      "destinationLinks": [
+        0,
+        1
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": 0,
+      "sourceId": 0,
+      "destId": 3,
+      "points": [
+        226.99623762461076,
+        300.4507262090795,
+        437.9874757304382,
+        303.9734126746089
+      ],
+      "taskLength": 1
+    },
+    {
+      "id": 1,
+      "sourceId": 2,
+      "destId": 3,
+      "points": [
+        276.3280248703744,
+        419.1229314206262,
+        441.9130174749025,
+        318.45064919829605
+      ],
+      "taskLength": 2
+    }
+  ],
+  "rootId": 0
+}

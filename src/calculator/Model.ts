@@ -10,6 +10,8 @@ export class Model {
   constructor (obj: any) {
     this.obj = JSON.parse(JSON.stringify(obj))
     this.model = extractModelFromObj(this.obj)
+    this.model.links.forEach((l) => { l.onCriticalPath = false })
+    this.model.milestones.forEach((m) => { m.onCriticalPath = false })
   }
 
   getModel (): IModel {
@@ -94,6 +96,8 @@ export class Model {
       return 0
     }, 0)
 
+    this.highlightCriticalPath()
+
     this.updateObjectData()
   }
 
@@ -119,15 +123,37 @@ export class Model {
     return this.model.milestones.filter((m: IMilestone): boolean => m.sourceLinks.length === 0).length
   }
 
+  private highlightCriticalPath (): void {
+    this.model.milestones.forEach(m => {
+      if (m.timing.tbuf === 0) {
+        m.onCriticalPath = true
+      }
+    })
+
+    this.model.links.forEach(l => {
+      const m1: IMilestone = this.getItemById(this.model.milestones, l.sourceId) as IMilestone
+      const m2: IMilestone = this.getItemById(this.model.milestones, l.destId) as IMilestone
+      if (m1.timing.tmin! + l.taskLength === m2.timing.tmax) {
+        l.onCriticalPath = true
+      }
+    })
+  }
+
   private updateObjectData (): void {
     this.model.milestones.forEach((m: IMilestone): void => {
       const mObj = this.obj.milestones.find((mObj: any) => mObj.id === m.id)
       mObj.name = m.name
+      mObj.onCriticalPath = m.onCriticalPath
       // I cannot just do that in case I want to store more data here in the future
       // mObj.timing = m.timing
       mObj.timing.tmin = m.timing.tmin
       mObj.timing.tmax = m.timing.tmax
       mObj.timing.tbuf = m.timing.tbuf
+    })
+
+    this.model.links.forEach((l: ILink): void => {
+      const lObj = this.obj.links.find((lObj: any) => lObj.id === l.id)
+      lObj.onCriticalPath = l.onCriticalPath
     })
   }
 }

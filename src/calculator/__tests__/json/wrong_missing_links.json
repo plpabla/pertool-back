@@ -1,0 +1,29 @@
+{
+  "state": {
+    "Link._id": 0,
+    "Milestone._id": 2
+  },
+  "milestones": [
+    {
+      "position": [
+        200,
+        300
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 0,
+      "name": "0",
+      "description": "main",
+      "sourceLinks": [],
+      "destinationLinks": [],
+      "timing": {
+        "tmin": 0,
+        "tmax": 0,
+        "tbuf": null
+      }
+    }
+  ],
+  "rootId": 0
+}

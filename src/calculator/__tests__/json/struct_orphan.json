@@ -1,0 +1,211 @@
+{
+  "state": {
+    "Link._id": 5,
+    "Milestone._id": 7
+  },
+  "milestones": [
+    {
+      "position": [
+        200,
+        300
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 0,
+      "name": "0",
+      "description": "",
+      "sourceLinks": [
+        0
+      ],
+      "destinationLinks": [],
+      "timing": {
+        "tmin": 0,
+        "tmax": 0,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        463.28293736501075,
+        199.35511320505987
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 2,
+      "name": "1",
+      "description": "a",
+      "sourceLinks": [
+        1
+      ],
+      "destinationLinks": [
+        0
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        612.3110151187905,
+        315.9520452132993
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 3,
+      "name": "2",
+      "description": "b",
+      "sourceLinks": [],
+      "destinationLinks": [
+        1
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        307.7753779697624,
+        539.4294982290916
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 4,
+      "name": "3",
+      "description": "o1",
+      "sourceLinks": [
+        2
+      ],
+      "destinationLinks": [
+        4
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        502.15982721382284,
+        556.7031177858678
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 5,
+      "name": "4",
+      "description": "o2",
+      "sourceLinks": [
+        3
+      ],
+      "destinationLinks": [
+        2
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        384.4492440604751,
+        629.0363996798683
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 6,
+      "name": "5",
+      "description": "o3",
+      "sourceLinks": [
+        4
+      ],
+      "destinationLinks": [
+        3
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": 0,
+      "sourceId": 0,
+      "destId": 2,
+      "points": [
+        225.22010626187446,
+        290.3591369608442,
+        438.0628311031363,
+        208.9959762442157
+      ],
+      "taskLength": 1
+    },
+    {
+      "id": 1,
+      "sourceId": 2,
+      "destId": 3,
+      "points": [
+        484.5479086590264,
+        215.9924506081629,
+        591.0460438247749,
+        299.3147078101963
+      ],
+      "taskLength": 0
+    },
+    {
+      "id": 2,
+      "sourceId": 4,
+      "destId": 5,
+      "points": [
+        334.669400246164,
+        541.8193864684062,
+        475.26580493742125,
+        554.3132295465532
+      ],
+      "taskLength": 1
+    },
+    {
+      "id": 3,
+      "sourceId": 5,
+      "destId": 6,
+      "points": [
+        479.1559855392568,
+        570.8390036163172,
+        407.45308573504116,
+        614.9005138494189
+      ],
+      "taskLength": 0
+    },
+    {
+      "id": 4,
+      "sourceId": 6,
+      "destId": 4,
+      "points": [
+        366.8953110554392,
+        608.521540770904,
+        325.3293109747983,
+        559.9443571380558
+      ],
+      "taskLength": 0
+    }
+  ],
+  "rootId": 0
+}

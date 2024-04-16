@@ -1,0 +1,66 @@
+{
+  "state": {
+    "Link._id": 1,
+    "Milestone._id": 2
+  },
+  "milestones": [
+    {
+      "position": [
+        200,
+        300
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 0,
+      "name": "0",
+      "description": "",
+      "sourceLinks": [],
+      "destinationLinks": [
+        0
+      ],
+      "timing": {
+        "tmin": 0,
+        "tmax": 0,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        473.2119845360826,
+        480.09319986192617
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 1,
+      "name": "1",
+      "description": "1",
+      "sourceLinks": [
+        0
+      ],
+      "destinationLinks": [],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": 0,
+      "sourceId": 1,
+      "destId": 0,
+      "points": [
+        450.6689344150295,
+        465.23349289174365,
+        222.54305012105303,
+        314.8597069701825
+      ],
+      "taskLength": 2
+    }
+  ]
+}

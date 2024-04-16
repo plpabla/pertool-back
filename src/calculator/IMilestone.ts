@@ -7,6 +7,7 @@ export interface IMilestone {
   sourceLinks: number[]
   destinationLinks: number[]
   timing: ITiming
+  onCriticalPath?: boolean
 }
 
 export const extractMilestone: ((obj: any) => IMilestone) = (obj) => {

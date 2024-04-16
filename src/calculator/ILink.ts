@@ -3,6 +3,7 @@ export interface ILink {
   sourceId: number
   destId: number
   taskLength: number
+  onCriticalPath?: boolean
 }
 
 export const extractLink: ((obj: any) => ILink) = (obj) => {

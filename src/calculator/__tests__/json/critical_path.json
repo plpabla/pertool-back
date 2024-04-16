@@ -1,0 +1,152 @@
+{
+  "state": {
+    "Link._id": 4,
+    "Milestone._id": 4
+  },
+  "milestones": [
+    {
+      "position": [
+        200,
+        300
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 0,
+      "name": "0",
+      "description": "onCritical",
+      "sourceLinks": [
+        0,
+        2
+      ],
+      "destinationLinks": [],
+      "timing": {
+        "tmin": 0,
+        "tmax": 0,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        423.4527687296418,
+        144.73958597923968
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 1,
+      "name": "1",
+      "description": "onCritical",
+      "sourceLinks": [
+        1
+      ],
+      "destinationLinks": [
+        0
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        653.9087947882738,
+        301.16527045706704
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 2,
+      "name": "2",
+      "description": "onCritical",
+      "sourceLinks": [],
+      "destinationLinks": [
+        1,
+        3
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    },
+    {
+      "position": [
+        447.0684039087948,
+        422.55811934871423
+      ],
+      "descriptionPos": [
+        0,
+        32.4
+      ],
+      "id": 3,
+      "name": "3",
+      "description": "not",
+      "sourceLinks": [
+        3
+      ],
+      "destinationLinks": [
+        2
+      ],
+      "timing": {
+        "tmin": null,
+        "tmax": null,
+        "tbuf": null
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": 0,
+      "sourceId": 0,
+      "destId": 1,
+      "points": [
+        222.17304230972874,
+        284.5936313580721,
+        401.27972641991306,
+        160.14595462116756
+      ],
+      "taskLength": 1
+    },
+    {
+      "id": 1,
+      "sourceId": 1,
+      "destId": 2,
+      "points": [
+        445.7925962157853,
+        159.9030983655355,
+        631.5689673021303,
+        286.0017580707712
+      ],
+      "taskLength": 10
+    },
+    {
+      "id": 2,
+      "sourceId": 0,
+      "destId": 3,
+      "points": [
+        224.18763598661857,
+        311.99826093143645,
+        422.88076792217623,
+        410.5598584172778
+      ],
+      "taskLength": 0
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "destId": 2,
+      "points": [
+        470.35429193122286,
+        408.8918316667232,
+        630.6229067658456,
+        314.8315581390581
+      ],
+      "taskLength": 6
+    }
+  ]
+}
