@@ -27,8 +27,8 @@ export class Model {
   }
 
   traverse (): number[] {
-    if (this.getFirstCount() !== 1) { throw new Error('More than one root milestone') }
-    if (this.getLastCount() !== 1) { throw new Error('More than two final milestones') }
+    if (this.getFirstCount() !== 1) { throw new Error('Not one root milestone') }
+    if (this.getLastCount() !== 1) { throw new Error('Not one final milestone') }
 
     const model: IModel = this.getModelCopy()
     const root: IMilestone = model.milestones.filter(m => m.destinationLinks.length === 0)[0]

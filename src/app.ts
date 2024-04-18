@@ -22,11 +22,10 @@ app.post('/api/calculate', (req:any, res:any) => {
   try {
     model = new Model(data)
     model.calculate()
-    console.log(model)
-  } catch (e) {
+  } catch (e:any) {
     res.statusCode = 400
     res.type('application/json')
-    res.send({'msg': 'something didn\'t work'})
+    res.send({'msg': e.message})
     return
   }
 
